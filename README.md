@@ -19,3 +19,11 @@ The files used is derived by a bikeshare system provider in the US, it contains 
 ### Credits
 https://github.com/khaledimad/Explore-US-Bikeshare-Data
 https://github.com/YashMotwani/US-Bikeshare-Data-Exploration-Program
+
+### What Software Do I Need?
+To complete this project, i'll require the following softwares:
+
+- Python 
+- A text editor, like Visual Studio Code
+- A terminal application
+
