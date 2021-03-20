@@ -27,3 +27,17 @@ To complete this project, i'll require the following softwares:
 - A text editor, like Visual Studio Code
 - A terminal application
 
+## The Datasets
+The datasets provided by a bike share system provider in the US, the data files for all three cities contain the same core six columns:
+
+- Start Time 
+- End Time 
+- Trip Duration 
+- Start Station 
+- End Station 
+- User Type 
+
+The Chicago and New York City files also have the following two columns:
+
+- Gender
+- Birth Year
