@@ -18,7 +18,7 @@ def get_filters():
         city= input('Please choose a City name from Chicago, New York City, Washington:').lower()
         if city not in CITY_DATA.keys():
             print('Please choose CITY from CITY DATA')
-            else:
+        else:
             break
     # TO DO: get user input for month (all, january, february, ... , june)
     MONTH_DATA = ['january', 'february', 'march', 'april', 'may', 'june']
@@ -26,7 +26,7 @@ def get_filters():
         month= input('Please choose a month from january, feburary, march, april, may, june or Choose all months:').lower()
         if month not in MONTH_DATA:
             print('Please choose MONTH from MONTH_DATA')
-            else:
+        else:
             break
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     DAY_DATA = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
@@ -34,11 +34,12 @@ def get_filters():
         day= input('Please choose a day of the week or choose all days to view data on all days:').lower()
         if day not in DAY_DATA:
             print('Please choose DAY from DAY_DATA')
-            else:
+        else:
             break
     print('-'*40)
     return city, month, day
 def display_data(df):
+    pd.set_option('display.max_columns',200)
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
     while ('yes'):
@@ -64,7 +65,7 @@ def load_data(city, month, day):
         month = months.index(month) + 1
         if day != 'all':
             df = df[df['day_of_week'] == day.title()]
-             return df
+            return df
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('\nCalculating The Most Frequent Times of Travel...\n')
@@ -144,5 +145,5 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-            if __name__ == "__main__":
+if __name__ == "__main__":
 	main()
