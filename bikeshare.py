@@ -39,6 +39,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 def display_data(df):
+    pd.set_option('display.max_columns',200)
     view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
     start_loc = 0
     while ('yes'):
